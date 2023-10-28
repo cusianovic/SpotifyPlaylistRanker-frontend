@@ -11,9 +11,9 @@ function App() {
     return (
         <Routes>
             <Route path="/" element={<HomePage/>}/>
-            <Route path="/leaderboard" element={<LeaderboardViewer/>} />
-            <Route path="/post" element={<PostPopup/>} />
-            <Route path="/discover" element={<PostViewer/>} />
+            <Route path="/leaderboard" element={<LeaderboardViewer/>}/>
+            <Route path="/post" element={<PostPopup/>}/>
+            <Route path="/discover" element={<PostViewer/>}/>
         </Routes>
     );
 }
