@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import PageTitle from "./PageTitle";
+import PageTitle from "../PageTitle";
 
 function PostPopup() {
 

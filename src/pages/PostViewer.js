@@ -1,5 +1,5 @@
-import up from "./icons/up.svg";
-import PageHeader from "./PageHeader";
+import up from "../icons/up.svg";
+import PageHeader from "../PageHeader";
 
 function PostViewer() {
     return (
