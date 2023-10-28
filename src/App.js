@@ -1,5 +1,6 @@
 import './App.css';
 import Post from "./Post";
+import EmbedTest from "./EmbedTest";
 
 function App() {
   return (

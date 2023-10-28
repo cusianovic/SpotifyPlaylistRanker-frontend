@@ -24,16 +24,16 @@
   top: 171px;
   width: 750px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 #description {
-  height: 304px;
+  height: 275px;
   left: 59px;
   position: absolute;
   top: 280px;
   width: 1018px;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding:20px;
 }
 
 #submit-button {
@@ -53,10 +53,10 @@
   letter-spacing: 0.25px;
   line-height: normal;
   text-align: left;
+  background-color: #cbbfef;
 }
 
 #url, #description, #submit-button, .page-title {
   font-family: "Rokkitt", Helvetica;
 }
-
 

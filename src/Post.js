@@ -2,26 +2,24 @@ import {useState} from 'react';
 import PageTitle from "./PageTitle";
 
 function Post() {
+
+    const [status, toggleStatus] = useState(false);
+
+    // TODO
+    function updateStatus(e) {
+    }
+
     return (
-        <div>
+        <div className="post-popup">
             <PageTitle text="UPLOAD PLAYLIST"></PageTitle>
-            <div>
-                <input className="bordered-elem" id="url" type="text"></input>
-            </div>
-            <div>
+            <form onSubmit={handleSubmission}>
+                <input className="bordered-elem" id="url" type="text" onChange={updateStatus}></input>
                 <textarea className="bordered-elem" id="description"></textarea>
-            </div>
-            <div>
-                <SubmitButton></SubmitButton>
-            </div>
+                <input type="submit" className="bordered-elem" id="submit-button" value="SUBMIT"></input>
+            </form>
         </div>
     );
-}
 
-function SubmitButton() {
-    return (
-        <button className="bordered-elem" id="submit-button" onClick={handleSubmission}>SUBMIT</button>
-    );
 }
 
 // TODO
