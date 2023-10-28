@@ -1,6 +1,5 @@
 .page-title {
   color: #000000;
-  font-family: "Rokkitt", Helvetica;
   font-size: 64px;
   font-weight: 500;
   left: 59px;
@@ -58,5 +57,54 @@
 
 #url, #description, #submit-button, .page-title {
   font-family: "Rokkitt", Helvetica;
+}
+
+.circular-button {
+  border: 1.5px solid;
+  border-color: #000000;
+  border-radius: 28.77px/27.5px;
+  mix-blend-mode: multiply;
+  position: absolute;
+  height: 55px;
+  width: 58px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Rokkitt", Helvetica;
+}
+
+#app-name {
+  left: 30px;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  position: absolute;
+  top: 25px;
+}
+
+#leaderboard {
+  left: 1125px;
+  top: 54px;
+  position: absolute;
+}
+
+#post {
+  left: 1200px;
+  top: 54px;
+  position: absolute;
+}
+
+#discover {
+  left: 1275px;
+  top: 54px;
+  position: absolute;
+}
+
+.button-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 14px;
 }
 

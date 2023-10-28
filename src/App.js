@@ -1,12 +1,9 @@
 import './App.css';
-import Post from "./Post";
-import EmbedTest from "./EmbedTest";
+import PageHeader from "./PageHeader";
 
 function App() {
   return (
-    <div className="App">
-      <Post></Post>
-    </div>
+      <PageHeader></PageHeader>
   );
 }
 
