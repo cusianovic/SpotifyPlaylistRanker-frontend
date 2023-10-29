@@ -10,6 +10,9 @@ function PostViewer() {
             <Spotify className = "bordered-elem" id ="embed-placeholder" link="https://open.spotify.com/album/7AJPV0L05IyIBid97AvwVD?si=doNPeZQ_Re-QGvrLNaNCaA" height={"10px"}/>
             <InteractionButton id = "upvote" src ={up}></InteractionButton>
             <InteractionButton id = "downvote" src ={down}></InteractionButton>
+            <text id = "post-info">Playlist name: Worlds <br></br>
+            This is a description of the given playlist. 
+            Users will be able to add additional context for the voters to consider before they make their decision.</text>
         </div>
     );
 }
