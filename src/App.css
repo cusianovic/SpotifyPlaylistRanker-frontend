@@ -107,12 +107,20 @@ h1 {
     position: absolute;
 }
 
-.button-icon {
+.not_round_button_icon {
     position: absolute;
     width: 3vh;
     height: 3vh;
     bottom: 1vw;
     left: 2vh;
+}
+
+.button-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 25%;
+    left: 25%;
 }
 
 .rounded_button {
@@ -168,4 +176,37 @@ h1 {
     line-height: normal;
     position: absolute;
     font-family: "Rokkitt", "Helvetica";
+}
+
+#upvote {
+    height: 3vh;
+    width: 3vw;
+    left: 25vw;
+    position: absolute;
+    top: 70vh;
+    padding: 3vw;
+    background-color:#4BD37A
+}
+
+#downvote {
+    height: 3vh;
+    left: 33vw;
+    position: absolute;
+    top: 70vh;
+    width: 3vw;
+    padding: 3vw;
+    background-color: #FB7F7F
+}
+
+#embed-placeholder {
+    height: 48vh;
+    width: 48vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    position: absolute;
+    left: 25vw;
+    top: 15vh;
+    background-color: antiquewhite;
 }

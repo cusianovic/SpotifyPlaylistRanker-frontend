@@ -17,11 +17,13 @@ function HomePage() {
 function HomeButton(props) {
     return (
         <button className="rounded_button" id={props.id} onClick={props.onClick}>
-            <img className="button-icon" src={props.src}></img>
+            <img className="not_round_button_icon" src={props.src}></img>
             <text>{props.text}</text>
         </button>
     );
 }
+
+
 
 
 export default HomePage;
