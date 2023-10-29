@@ -1,8 +1,9 @@
-import dice from './icons/dice.png';
-import plus from './icons/plus.png';
-import playlist from './icons/playlist.png'
-import leaderboard from './icons/leaderboard.png'
+import dice from './pages/icons/dice.png';
+import plus from './pages/icons/plus.png';
+import playlist from './pages/icons/playlist.png'
+import leaderboard from './pages/icons/leaderboard.png'
 import {useNavigate} from "react-router";
+import exit from './pages/icons/exit.png';
 
 function PageHeader() {
     const navigate = useNavigate();
@@ -12,6 +13,7 @@ function PageHeader() {
             <CircularButton id="leaderboard" src={leaderboard} onClick={()=>{ navigate("/leaderboard") }}></CircularButton>
             <CircularButton id="post" src={playlist} onClick={() => { navigate("/post") }}></CircularButton>
             <CircularButton id="discover" src={dice} onClick={() => { navigate("/discover") } }></CircularButton>
+            <CircularButton id="logout" src={exit} onClick={()=>{ navigate("/leaderboard") }}></CircularButton>
         </div>
     )
 }

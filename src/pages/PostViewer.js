@@ -1,4 +1,4 @@
-import up from "../icons/up.svg";
+import up from "./icons/up.svg";
 import PageHeader from "../PageHeader";
 
 function PostViewer() {

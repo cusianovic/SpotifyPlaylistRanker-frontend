@@ -10,9 +10,6 @@ function HomePage() {
         <div>
             <text id ="BIG_HOME_APP_NAME">RATE-IFY</text>
             <HomeButton id="home_leaderboard" src={leaderboard} onClick={()=>{ navigate("/leaderboard") }} text = "LEADERBOARD"></HomeButton>
-            <HomeButton  id="home_post" src={playlist} onClick={() => { navigate("/post")}}text = "POST A PLAYLIST"></HomeButton>
-            <HomeButton  id="home_random" src={dice} onClick={() => { navigate("/discover") } } text = "RATE A PLAYLIST"></HomeButton>
-            <HomeButton id="home_logout" src={exit} onClick={()=>{ navigate("/leaderboard") }} text = "LOGOUT"></HomeButton>
         </div>
     )
 }
