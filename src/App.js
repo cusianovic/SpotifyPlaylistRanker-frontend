@@ -8,7 +8,7 @@ import LeaderboardViewer from "./pages/LeaderboardViewer";
 import PostPopup from "./pages/PostPopup";
 import PostViewer from "./pages/PostViewer";
 import Auth from "./util/auth"
-
+import LoginPage from "./pages/LoginPage"
 function App() {
     return (
         <Routes>
@@ -17,6 +17,7 @@ function App() {
             <Route path="/leaderboard" element={<LeaderboardViewer/>}/>
             <Route path="/post" element={<Auth component={<PostPopup/>}/>}/>
             <Route path="/discover" element={<Auth component={<PostViewer/>}/>}/>
+            <Route path = "/base" element={<LoginPage></LoginPage>}/>
         </Routes>
     );
 }
