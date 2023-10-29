@@ -13,7 +13,7 @@
 .bordered-elem {
     border: 3px solid;
     border-color: #000000;
-    border-radius: 25px;
+    border-radius: 2vw;
 }
 
 #url {
@@ -42,7 +42,7 @@
     position: absolute;
     top: 85vh;
     width: 30vw;
-    background-color: #4BD37A;
+    background-color: #97B69E;
     font-size: 24px;
 }
 
@@ -52,7 +52,7 @@
     letter-spacing: 0.25px;
     line-height: normal;
     text-align: left;
-    background-color: #cbbfef;
+    background-color: rgb(232, 209, 180);
 }
 
 #url, #description, #submit-button, .page-title {
@@ -62,7 +62,7 @@
 .circular-button {
     border: 1.5px solid;
     border-color: #000000;
-    border-radius: 28.77px/27.5px;
+    border-radius: 1vw;
     mix-blend-mode: multiply;
     position: absolute;
     height: 4vw;
@@ -185,7 +185,7 @@ h1 {
     position: absolute;
     top: 70vh;
     padding: 3vw;
-    background-color:#4BD37A
+    background-color:#97B69E
 }
 
 #downvote {
@@ -208,5 +208,5 @@ h1 {
     position: absolute;
     left: 25vw;
     top: 15vh;
-    background-color: antiquewhite;
+    background-color: rgb(232, 209, 180);
 }
