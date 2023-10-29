@@ -181,32 +181,35 @@ h1 {
 #upvote {
     height: 3vh;
     width: 3vw;
-    left: 25vw;
+    left: 24.5vw;
     position: absolute;
-    top: 70vh;
+    top: 67vh;
     padding: 3vw;
-    background-color:#97B69E
+    background-color:#97B69E;
+    scale: 0.8;
 }
 
 #downvote {
     height: 3vh;
-    left: 33vw;
+    left: 30.5vw;
     position: absolute;
-    top: 70vh;
-    width: 3vw;
+    top: 67vh;
+    width: 2vw;
     padding: 3vw;
-    background-color: #FB7F7F
+    background-color: #FB7F7F;
+    scale: 0.8;
 }
 
 #embed-placeholder {
-    height: 48vh;
-    width: 48vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    height: 60vh;
+    width: 60vw;
+    padding-left: 1vh;
+    padding-right: 1vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
     position: absolute;
-    left: 25vw;
-    top: 15vh;
-    background-color: rgb(232, 209, 180);
+    left: 19vw;
+    top: 10vh;
+    background-color: #c9a992;
+    scale: .8;
 }

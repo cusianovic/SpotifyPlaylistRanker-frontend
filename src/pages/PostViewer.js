@@ -7,13 +7,12 @@ function PostViewer() {
     return (
         <div>
             <PageHeader></PageHeader>
-            <Spotify id ="embed-placeholder" link="https://open.spotify.com/album/0fUy6IdLHDpGNwavIlhEsl?si=mTiITmlHQpaGkoivGTv8Jw" height={"10px"}/>
+            <Spotify className = "bordered-elem" id ="embed-placeholder" link="https://open.spotify.com/album/7AJPV0L05IyIBid97AvwVD?si=doNPeZQ_Re-QGvrLNaNCaA" height={"10px"}/>
             <InteractionButton id = "upvote" src ={up}></InteractionButton>
             <InteractionButton id = "downvote" src ={down}></InteractionButton>
         </div>
     );
 }
-
 
 function InteractionButton(props) {
     return (
