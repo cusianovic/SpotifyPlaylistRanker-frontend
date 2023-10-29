@@ -5,7 +5,7 @@ import { placeholder } from '@babel/types';
 
 function PostPopup() {
 
-    const [spotifyURL, setSpotifyURL] = useState("Ener");
+    const [spotifyURL, setSpotifyURL] = useState("");
     const [description, setDescription] = useState("");
     const [playlistname, setPlaylistName] = useState("")
     
@@ -29,8 +29,6 @@ function PostPopup() {
 
     }
 
-
-
     return (
 
         <div>
@@ -47,9 +45,5 @@ function PostPopup() {
     );
 
 }
-
-// TODO
-
-
 
 export default PostPopup;

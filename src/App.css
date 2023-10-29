@@ -273,5 +273,8 @@ h1 {
 #login_button {
     left: 30vw;
     top: 58vh;
-    position: absolute
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 14px;
 }
