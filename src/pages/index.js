@@ -24,5 +24,5 @@ const Index = () => {
         <LogoutButton/>        
     </div>)
 }
-
-export default Index;
+export {LogoutButton, LoginButton}
+export default Index
