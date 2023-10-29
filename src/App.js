@@ -12,8 +12,7 @@ import LoginPage from "./pages/LoginPage"
 function App() {
     return (
         <Routes>
-            <Route path='/login' element={<Login/>}/>
-            <Route path="/" element={<HomePage/>}/>
+            <Route path='/' element={<Login/>}/>
             <Route path="/leaderboard" element={<LeaderboardViewer/>}/>
             <Route path="/post" element={<Auth component={<PostPopup/>}/>}/>
             <Route path="/discover" element={<Auth component={<PostViewer/>}/>}/>
