@@ -185,7 +185,7 @@ h1 {
     width: 3vw;
     left: 24vw;
     position: absolute;
-    top: 66vh;
+    top: 66.3vh;
     padding: 3vw;
     background-color:#97B69E;
     scale: 0.7;
@@ -195,8 +195,8 @@ h1 {
     height: 3vh;
     left: 29.5vw;
     position: absolute;
-    top: 66vh;
-    width: 2vw;
+    top: 66.3vh;
+    width: 3vw;
     padding: 3vw;
     background-color: #FB7F7F;
     scale: 0.7;
@@ -219,9 +219,41 @@ h1 {
 #post-info {
     position: absolute;
     left: 36.5vw;
-    top:  68vh;
+    top:  68.5vh;
     font-size: 20px;
     width: 38vw;
     height: 5vh;
     font-family: "Rokkitt", "Helvetica";
+}
+
+.results {
+    height: 2vh;
+    width: 4vw;
+    font-family: "Rokkitt", "Helvetica";
+    font-size: 16px;
+    text-align: center;
+}
+
+#fire-results {
+    left: 25.2vw;
+    top: 78vh;
+    position: absolute;
+    color: #97B69E;
+}
+
+#trash-results {
+    left: 30.75vw;
+    top: 78vh;
+    position: absolute;
+    stroke: #000000;
+    color: #FB7F7F;
+
+}
+
+#try_again {
+    left: 22.5vw;
+    top: 87vh;
+    position: absolute;
+    height: 4vw;
+    width: 55vw;
 }
