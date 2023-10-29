@@ -275,3 +275,38 @@ h1 {
     top: 58vh;
     position: absolute
 }
+
+.leaderboard {
+    overflow-x: scroll;
+    position:absolute;
+    bottom: 7%;
+    left: 15%;
+    width:70%;
+}
+#leaderboard-columns-start {
+    background-color: #A296E8;
+    border-color: #A296E8;
+    letter-spacing: 0.75px;
+    font-size: 10px;
+    height: 30px;
+}
+td {
+    padding-left: 1%;
+    font-family: "Rokkitt", Helvetica;
+}
+.playlist-info-0 {
+    background-color: #BA99C9;
+}
+.playlist-info-1 {
+    background-color: #BFA1C4;
+}
+.playlist-info-0, .playlist-info-1 {
+    height:30px;
+}
+
+
+
+
+
+
+
