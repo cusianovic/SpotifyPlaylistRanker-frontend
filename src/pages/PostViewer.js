@@ -27,9 +27,12 @@ function PostViewer(props) {
                     body: JSON.stringify(body)
             }).then(e => {
                 console.log("yipee!")
-                return e.json();
+                let vals = playlist;
+                if(e.json().status != -1) vals.upvotes++;
+                return vals;
             });
             console.log(response);
+            setPlaylist(response);
             setReacted(true);
         }
 
@@ -38,6 +41,29 @@ function PostViewer(props) {
             "playlistID": playlist.playlistid
         })
     }
+
+    function downvote(){
+        async function AJAX(URL, body){
+            let response = await fetch(URL, {
+                    method: 'POST',
+                    headers: {'Content-Type':'application/json'},
+                    body: JSON.stringify(body)
+            }).then(e => {
+                let vals = playlist;
+                if(e.json().status != -1) vals.downvotes++;
+                return vals;
+            });
+            setPlaylist(response);
+            setReacted(true);
+        }
+
+        AJAX("http://localhost:3001/api/downvote",{
+            "user": user.email,
+            "playlistID": playlist.playlistid
+        })
+    }
+
+    useEffect(()=>{}, [reacted]);
 
     useEffect(() =>{
 
@@ -51,15 +77,38 @@ function PostViewer(props) {
             });
             console.log(response);
             setPlaylist(response);
+            return response;
         }
+
+        async function AJAX2(URL, body){
+            let response = await fetch(URL, {
+                    method: 'POST',
+                    headers: {'Content-Type':'application/json'},
+                    body: JSON.stringify(body)
+            }).then(e => {
+                console.log("yipee!")
+                return e.json();
+            });
+            console.log(response);
+            setReacted(response.seen);
+        }
+
+
  
 
-        AJAX("http://localhost:3001/api/getRandom").then(() => {
+        AJAX("http://localhost:3001/api/getRandom").then((e) => {
+            AJAX2("http://localhost:3001/api/viewed", {
+                "user": user.email,
+                "playlistID": e.playlistid
+            }).then(() => {
+                
+            });
             return setLoading(false);
         });
 
 
     }, [isLoading])
+
 
 
     if(isLoading) return(
@@ -71,13 +120,13 @@ function PostViewer(props) {
             <PageHeader></PageHeader>
             <Spotify className = "bordered-elem" id ="embed-placeholder" link={`https://open.spotify.com/playlist/${playlist.playlistid}`} height={"10px"}/>
             <InteractionButton id = "upvote" src ={up} onClick={upvote}></InteractionButton>
-            <InteractionButton id = "downvote" src ={down}></InteractionButton>
-            <text className="results" id = "fire-results">903</text>
-            <text className="results" id = "trash-results">811</text>
+            <InteractionButton id = "downvote" src ={down} onClick={downvote}></InteractionButton>
+            <text className="results" id = "fire-results" style={{visibility: reacted ? "visible" : "hidden"}}>{playlist.upvotes}</text>
+            <text className="results" id = "trash-results" style={{visibility: reacted ? "visible" : "hidden"}}>{playlist.downvotes}</text>
             <text id = "post-info">Playlist name: Worlds <br></br>
             {playlist.description}
             </text>
-            <button className="rounded_button" id= "try_again" onClick={() => { navigate("/discover") } }>
+            <button className="rounded_button" id="try_again" style={{visibility: reacted ? "visible" : "hidden"}} onClick={() => { setLoading(true) } }>
             <img className="not_round_button_icon" src={dice}></img>
             <text>RATE ANOTHER PLAYLIST</text>
         </button>
