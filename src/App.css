@@ -1,12 +1,12 @@
 .page-title {
     color: #000000;
-    font-size: 64px;
+    font-size: 54px;
     font-weight: 500;
     left: 5vw;
     letter-spacing: 0.25px;
     line-height: normal;
     position: absolute;
-    top: 3vh;
+    top: 5vh;
     width: 655px;
 }
 
@@ -16,12 +16,24 @@
     border-radius: 2vw;
 }
 
-#url {
-    height: 7vh;
+
+#playlist-name {
+    height: 10vh;
     left: 5vw;
     position: absolute;
     top: 25vh;
-    width: 50vw;
+    width: 20vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#url {
+    height: 10vh;
+    left: 35vw;
+    position: absolute;
+    top: 25vh;
+    width: 56.5vw;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -46,7 +58,7 @@
     font-size: 24px;
 }
 
-#url, #description {
+#url, #description, #playlist-name {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.25px;
@@ -55,7 +67,7 @@
     background-color: rgb(232, 209, 180);
 }
 
-#url, #description, #submit-button, .page-title {
+#url, #description, #submit-button, .page-title, #playlist-name {
     font-family: "Rokkitt", Helvetica;
 }
 
@@ -81,7 +93,7 @@ h1 {
     line-height: normal;
     position: absolute;
     top: 1vh;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 #logout {
