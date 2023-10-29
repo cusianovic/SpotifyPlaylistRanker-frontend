@@ -36,25 +36,26 @@ function LeaderboardViewer() {
 
 function Leaderboard(props) {
 
-
-    console.log(props.data);
+    let count = -1;
 
     return (
         <table className="leaderboard">
             <thead>
-            <tr>
-                <td>Playlist Name</td>
-                <td>Total Upvotes</td>
-                <td>Total Downvotes</td>
-                <td>Playlist ID</td>
+            <tr id="leaderboard-columns-start">
+                <td>PLAYLIST NAME</td>
+                <td>TOTAL UPVOTES</td>
+                <td>TOTAL DOWNVOTES</td>
+                <td>PLAYLIST ID</td>
             </tr>
             </thead>
 
             {props.data.map(
                 (item) => {
                     console.log(item)
+                    count = count + 1 % 2;
+                    const rowClass = "playlist-info-" + count
                     return (
-                        <tr>
+                        <tr className={rowClass}>
                             <td>{item.name}</td>
                             <td>{item.upvotes}</td>
                             <td>{item.downvotes}</td>

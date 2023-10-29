@@ -278,3 +278,35 @@ h1 {
     height: 30px;
     bottom: 14px;
 }
+
+.leaderboard {
+    position:relative;
+    bottom:-175px;
+    left: 15%;
+    width:70%;
+}
+
+#leaderboard-columns-start {
+    background-color: #a296e8;
+    border-color: #a296e8;
+    letter-spacing: 0.75px;
+    font-size: 10px;
+    height: 30px;
+}
+
+td {
+    padding-left: 1%;
+    font-family: "Rokkitt", Helvetica;
+}
+
+.playlist-info-0 {
+    background-color: #ba99c9;
+}
+
+.playlist-info-1 {
+    background-color: #bfa1c4;
+}
+
+.playlist-info-0, .playlist-info-1 {
+    height:30px;
+}
